@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A47C86A7-1F45-4F46-9A01-69F6764702DD}</ProjectGuid>
+    <ProjectGuid>{3DBD03B0-8528-4DF2-BF4B-470719385FBC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>POSSystem.Common</RootNamespace>
-    <AssemblyName>POSSystem.Common</AssemblyName>
+    <RootNamespace>POSSystem.Service</RootNamespace>
+    <AssemblyName>POSSystem.Service</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,6 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POSSystem.Common\POSSystem.Common.csproj">
+      <Project>{a47c86a7-1f45-4f46-9a01-69f6764702dd}</Project>
+      <Name>POSSystem.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POSSystem.Data\POSSystem.Data.csproj">
+      <Project>{802a56c2-1bdc-495e-896e-0627e69abab3}</Project>
+      <Name>POSSystem.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POSSystem.Model\POSSystem.Model.csproj">
+      <Project>{45486feb-4175-4c54-a88b-15b7aae04b73}</Project>
+      <Name>POSSystem.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
